@@ -2,8 +2,8 @@
 module.exports = {
   title: 'Red Five Software',
   tagline: 'The first Airman-driven DCGS Software Development Team',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://dgs1sdt.pages.gs.mil',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',

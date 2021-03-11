@@ -1,4 +1,4 @@
-image: node:latest
+image: ${CI_REGISTRY}/dgs1sdt/docker-images/node:15-alpine3.10
 
 cache:
   paths:

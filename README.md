@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.gs.mil/DGS1SDT/docs/badges/main/pipeline.svg)](https://gitlab.gs.mil/DGS1SDT/docs/-/commits/main)
+
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.

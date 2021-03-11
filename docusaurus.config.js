@@ -89,13 +89,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://gitlab.gs.mil/DGS1SDT/docs/-/tree/main/',
+            'https://gitlab.gs.mil/DGS1SDT/docs/-/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://gitlab.gs.mil/DGS1SDT/docs/-/tree/main/blog/',
+            'https://gitlab.gs.mil/DGS1SDT/docs/-/edit/main/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

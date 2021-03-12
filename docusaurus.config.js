@@ -11,19 +11,33 @@ module.exports = {
   projectName: 'Red Five Software', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Red Five Documentation',
-      logo: {
-        alt: 'Red Five Logo',
-        src: 'img/red5Logo.png',
-      },
+      title: 'Red Five',
+      // logo: {
+      //   alt: 'Red Five Logo',
+      //   src: 'img/red5Logo.png',
+      // },
       items: [
         {
-          to: 'docs/',
+          to: '/docs',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Resources',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'apps/',
+          label: 'Our Apps',
+          position: 'left',
+        },
+        {
+          to: 'info/',
+          label: 'Team Info',
+          position: 'left',
+        },
+        {
+          to: 'blog', 
+          label: 'Blog', 
+          position: 'left'
+        },
         {
           href: 'https://gitlab.gs.mil/DGS1SDT',
           label: 'GitLab (CAC required)',
@@ -35,28 +49,32 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Resources',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Engineer',
+              to: 'docs/engineer/training',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Design',
+              to: 'docs/design/training',
+            },
+            {
+              label: 'Product',
+              to: 'docs/product/training',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
+            {
+              label: 'Our Website',
+              href: 'https://red5software.io',
+            },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/qpjfJhn',
             },
             {
               label: 'LinkedIn',
@@ -73,13 +91,16 @@ module.exports = {
             },
             {
               label: 'GitHub (Public)',
-              href: 'https://github.com/RedFiveTeam',
+              href: 'https://github.com/RedFiveTeam/',
             },
           ],
         },
       ],
-      copyright: `Copyright © 2021 Red Five Software. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Red Five Software. Built with Docusaurus.`,
     },
+    prism: {
+      additionalLanguages: ['shell-session']
+    }
   },
   presets: [
     [

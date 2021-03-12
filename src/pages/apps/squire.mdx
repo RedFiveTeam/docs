@@ -1,0 +1,128 @@
+---
+idx: squire
+title: Squire
+---
+
+# Squire
+
+## Current development screenshot:
+![Squire](/img/apps/squire-dev.png)
+
+## Links to Squire
+[Squire - Develop](https://squire-dev.devom.east.paas.nga.mil/)[^1]  
+[Squire - Production](https://squire.om.east.paas.nga.mil/)[^2]  
+[^1]: Develop is updated any time a feature branch is merged into `develop`, it is unstable and often broken  
+[^2]: Production is updated when `develop` gets merged into `main`, this is the live product, once we reach a release
+
+## Goals
+Squire's purpose is to fill the gap left behind as AFTR and TBA users transition to TFTR. At this point, TFTR feels like
+vaporware, so the group felt the need to develop a fix. Red Five to the rescue!
+
+## Project Tracker
+[Pivotal Tracker - Squire](https://www.pivotaltracker.com/n/projects/2476396)
+
+## Source Code Repository
+[Gitlab - Squire](https://gitlab.gs.mil/DGS1SDT/Squire)
+
+# Want to help develop Squire?
+
+### Development Requirements
+
+- [Git](https://git-scm.com/)
+- [Java Development Kit 8+](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [Node](https://nodejs.org/)
+- [MySQL](https://www.mysql.com/)
+- An editor of your choice ([Intellij IDEA](https://www.jetbrains.com/idea/), [VS Code](https://code.visualstudio.com/), [vi](https://www.vim.org/), etc)
+
+### Steps to Develop Squire
+
+1. Clone a local copy (will require an account with NGA):
+
+```shell-session
+git clone https://gitlab.gs.mil/DGS1SDT/Squire.git
+```
+
+1. Enter the `Squire` folder:
+
+```shell-session
+cd Squire
+```
+
+1. Setup a MySQL database for Squire:
+   Login to MySQL:
+
+```shell-session
+mysql -u <your_mysql_username> -p <your_mysql_password>
+```
+
+Create the database for Squire -> `squiredev`:
+
+```sql
+CREATE DATABASE squiredev;
+```
+
+Exit mysql:
+
+```shell-session
+quit
+```
+
+1. Start the backend server:
+
+```shell-session
+mvn spring-boot:run
+```
+
+1. Watch the output for the following:
+
+```shell-session
+Started SquireApplicationKt in 9.828 seconds (JVM running for 10.932)
+```
+
+1. In a second terminal session, enter the `frontend` folder:
+
+```shell-session
+cd Squire/frontend
+```
+
+1. Install the front-end dependencies:
+
+```shell-session
+npm install
+```
+
+1. Start the front-end server
+
+```shell-session
+npm start
+```
+
+1. When the following message is displayed, you can browse to [http://localhost:3000](http://localhost:3000) to start interacting with Squire:
+
+```shell-session
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.25.35.66:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+```
+
+### Congrats! You've got a local Squire development instance!
+
+## Squire's Tech Stack
+
+### Back-end
+- [Spring-Boot](https://spring.io/projects/spring-boot)
+- [Maven](https://maven.apache.org/)
+- [Kotlin](https://kotlinlang.org/)
+- [GraphQL](https://graphql.org/)
+
+### Front-end
+- [React](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Apollo Client](https://www.apollographql.com/)
+- [Typescript](https://www.typescriptlang.org/)

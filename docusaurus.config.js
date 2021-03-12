@@ -2,20 +2,20 @@
 module.exports = {
   title: 'Red Five Software',
   tagline: 'The first Airman-driven DCGS Software Development Team',
-  url: 'https://dgs1sdt.pages.gs.mil',
+  url: 'https://redfiveteam.github.io',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
-  organizationName: 'DGS1SDT', // Usually your GitHub org/user name.
-  projectName: 'Red Five Software', // Usually your repo name.
+  organizationName: 'RedFiveTeam', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Red Five',
-      // logo: {
-      //   alt: 'Red Five Logo',
-      //   src: 'img/red5Logo.png',
-      // },
+      logo: {
+        alt: 'Red Five Logo',
+        src: 'img/red5Logo.png',
+      },
       items: [
         {
           to: '/docs',

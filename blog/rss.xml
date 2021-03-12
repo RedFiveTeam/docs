@@ -9,14 +9,14 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Welcome]]></title>
-            <link>https://redfiveteam.github.io/blog/welcome</link>
+            <link>https://redfiveteam.github.io/docs/blog/welcome</link>
             <guid>welcome</guid>
             <pubDate>Thu, 11 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to the Red 5 blog! Simply add files to the blog directory to add new blogs. It supports tags as well!]]></description>
         </item>
         <item>
             <title><![CDATA[Hello]]></title>
-            <link>https://redfiveteam.github.io/blog/hello-world</link>
+            <link>https://redfiveteam.github.io/docs/blog/hello-world</link>
             <guid>hello-world</guid>
             <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2 alpha.]]></description>
